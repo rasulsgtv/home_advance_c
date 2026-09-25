@@ -18,7 +18,6 @@ int PrintHelp(void)
 
     printf("Options:\n");
     printf("  -h        Show this help\n");
-    printf("  -f N      Select function (1, 2 or 3)\n");
     printf("  -r        Find roots\n");
     printf("  -i        Calculate integral / area\n\n");
 
@@ -26,8 +25,6 @@ int PrintHelp(void)
     printf("  program -r\n");
     printf("  program -i\n");
     printf("  program -r -i\n");
-    printf("  program -f 1 -r\n");
-    printf("  program -f 2 -i\n");
 
     return 0;
 }

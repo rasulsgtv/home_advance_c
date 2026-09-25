@@ -22,23 +22,13 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    while ((rez = getopt(argc, argv, "hf:ri")) != -1)
+    while ((rez = getopt(argc, argv, "hri")) != -1)
     {
         switch (rez)
         {
             case 'h':
                 PrintHelp();
                 return 0;
-
-            case 'f':
-                selectedFunction = atoi(optarg);
-
-                if (selectedFunction < 1 || selectedFunction > 3)
-                {
-                    printf("Error: function must be 1, 2 or 3\n");
-                    return 1;
-                }
-                break;
 
             case 'r':
                 doRoot = 1;
